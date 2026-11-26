@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Psi. Laís Souza | Psicoterapia Online (TCC)</title>
+  <meta name="description" content="Psicoterapia acolhedora e colaborativa com a Psi. Laís Souza (CRP 13/13309). Atendimento online fundamentado na TCC para adolescentes, jovens e adultos.">
+  <meta name="keywords" content="psicóloga online, terapia cognitivo comportamental, TCC, timidez, ansiedade, autoestima, insegurança, habilidades sociais, psicoterapia, Laís Souza, CRP 13/13309">
+  <meta name="author" content="Psi. Laís Souza">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://psilaissouza.com.br/">
+
+  <!-- Open Graph / Redes Sociais / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://psilaissouza.com.br/">
+  <meta property="og:title" content="Psi. Laís Souza | Psicoterapia Online (TCC)">
+  <meta property="og:description" content="Um espaço para trabalhar a insegurança, a autocobrança, a ansiedade e os desafios de se relacionar consigo mesmo e com os outros.">
+  <meta property="og:image" content="foto-lais-heloisa.png">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Psi. Laís Souza">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Psi. Laís Souza | Psicoterapia Online (TCC)">
+  <meta name="twitter:description" content="Psicoterapia online fundamentada na TCC para adolescentes, jovens e adultos.">
+  <meta name="twitter:image" content="foto-lais-heloisa.png">
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Outfit"', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            sand: {
+              50: '#FDFBF7',
+              100: '#FAF6EE',
+              200: '#F1E9DA',
+              300: '#E4D6BE',
+              800: '#4A3E31',
+              900: '#262019',
+            },
+            brandGreen: {
+              DEFAULT: '#4C6E4A',
+              dark: '#385337',
+              light: '#5D855B',
+              bg: '#EAF2EC',
+            },
+            softBlue: '#EDF3F8',
+            softPeach: '#FDF0EA',
+            softYellow: '#FCF7E5',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FAF6EE;
+      color: #262019;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, .font-display {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .clean-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .clean-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px -10px rgba(38, 32, 25, 0.08);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-brandGreen-bg selection:text-brandGreen-dark">
+
+  <!-- CABEÇALHO PERFEITAMENTE ALINHADO -->
+  <header class="w-full bg-[#FAF6EE]/90 backdrop-blur-md sticky top-0 z-40 border-b border-black/[0.06]">
+    <div class="max-w-5xl mx-auto px-5 sm:px-8 h-20 flex items-center justify-between">
+      
+      <a href="#" class="flex items-center gap-2.5 sm:gap-3 group min-w-0" aria-label="Psi. Laís Souza">
+        <div class="w-9 h-9 sm:w-10 sm:h-10 shrink-0 rounded-2xl bg-brandGreen text-white flex items-center justify-center font-bold text-sm shadow-sm group-hover:scale-105 transition-transform">
+          <i data-lucide="sparkles" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+        </div>
+        <div class="min-w-0">
+          <span class="font-display text-base sm:text-xl font-bold tracking-tight text-sand-900 block leading-tight truncate">Psi. Laís Souza</span>
+          <span class="text-[10px] sm:text-[11px] font-semibold text-sand-800/70 tracking-wide block truncate">CRP 13/13309 • TCC<span class="hidden sm:inline"> • Atendimento Online</span></span>
+        </div>
+      </a>
+
+      <nav class="flex items-center gap-6 shrink-0" aria-label="Navegação Principal">
+        <div class="hidden md:flex items-center gap-6 text-xs font-semibold text-sand-800/80">
+          <a href="#como-ajudo" class="hover:text-sand-900 transition-colors">Como posso ajudar</a>
+          <a href="#como-funciona" class="hover:text-sand-900 transition-colors">Como funciona</a>
+          <a href="#sobre-mim" class="hover:text-sand-900 transition-colors">Sobre mim</a>
+          <a href="#faq" class="hover:text-sand-900 transition-colors">Dúvidas</a>
+        </div>
+
+        <a href="#contato" class="inline-flex items-center gap-1.5 sm:gap-2 bg-brandGreen hover:bg-brandGreen-dark text-white text-xs sm:text-sm font-semibold px-3.5 sm:px-5 py-2.5 rounded-full shadow-sm transition-all hover:scale-105 whitespace-nowrap shrink-0">
+          <i data-lucide="message-circle" class="w-4 h-4 shrink-0"></i>
+          <span><span class="hidden sm:inline">Falar no </span>WhatsApp</span>
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="flex-grow">
+
+    <!-- HERO SECTION -->
+    <section class="py-10 sm:py-16 overflow-hidden">
+      <div class="max-w-5xl mx-auto px-5 sm:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          
+          <div class="lg:col-span-7 flex flex-col items-start space-y-5">
+            
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-brandGreen-bg text-brandGreen-dark text-[11px] font-bold uppercase tracking-wider">
+              Psicoterapia Online • TCC
+            </span>
+
+            <h1 class="font-display text-3xl sm:text-4xl lg:text-[2.85rem] font-bold text-sand-900 leading-[1.16] tracking-tight">
+              Nem sempre é fácil entender o que sentimos. Mas podemos aprender a lidar com isso.
+            </h1>
+
+            <p class="text-sm sm:text-base text-sand-800/80 leading-relaxed max-w-xl">
+              Um espaço para trabalhar a insegurança, a autocobrança, a ansiedade e os desafios de se relacionar consigo mesmo e com os outros.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-3 pt-1">
+              <a href="#contato" class="inline-flex items-center justify-center gap-2 bg-brandGreen hover:bg-brandGreen-dark text-white font-semibold text-xs sm:text-sm px-6 py-3.5 rounded-2xl shadow-sm transition-all hover:scale-[1.02]">
+                <i data-lucide="message-square" class="w-4 h-4"></i>
+                <span>Enviar mensagem no WhatsApp</span>
+              </a>
+
+              <a href="#como-ajudo" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-sand-50 text-sand-900 font-semibold text-xs sm:text-sm px-5 py-3.5 rounded-2xl border border-black/10 transition-all">
+                <span>Conhecer o trabalho</span>
+                <i data-lucide="arrow-down" class="w-4 h-4 text-sand-800/60"></i>
+              </a>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-x-5 gap-y-2 pt-2 text-[11px] text-sand-800/70 font-medium">
+              <span class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brandGreen"></i> Sigilo Ético Total</span>
+              <span class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brandGreen"></i> No seu próprio ritmo</span>
+              <span class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brandGreen"></i> Sem julgamentos</span>
+            </div>
+
+          </div>
+
+          <div class="lg:col-span-5 flex justify-center lg:justify-end">
+            <div class="w-full max-w-sm">
+              <div class="bg-white rounded-3xl p-4 sm:p-5 border border-black/5 shadow-sm clean-card">
+                
+                <div class="relative aspect-[4/4.8] rounded-2xl overflow-hidden bg-sand-100">
+                  <img 
+                    id="profile-image" 
+                    src="foto-lais-heloisa.png" 
+                    alt="Foto da Psicóloga Clínica Laís Souza" 
+                    width="400"
+                    height="480"
+                    fetchpriority="high"
+                    class="w-full h-full object-cover object-top"
+                  >
+                </div>
+
+                <div class="mt-4 px-2 flex items-center justify-between gap-3">
+                  <span class="font-display font-bold text-lg sm:text-xl text-sand-900 leading-none tracking-tight">Laís Souza</span>
+                  <span class="flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-sand-800/80 leading-none">
+                    <span class="w-2 h-2 rounded-full bg-brandGreen shrink-0"></span> Atendimento Online
+                  </span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COMO POSSO AJUDAR -->
+    <section id="como-ajudo" class="py-16 sm:py-20 border-t border-black/[0.06] bg-white/50">
+      <div class="max-w-5xl mx-auto px-5 sm:px-8">
+        
+        <div class="text-center max-w-xl mx-auto mb-12">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sand-200 text-sand-900 text-[11px] font-bold uppercase tracking-wider mb-2.5">
+            Áreas de Atendimento
+          </span>
+          <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-sand-900 tracking-tight">
+            Como posso ajudar você no dia a dia?
+          </h2>
+          <p class="text-xs sm:text-sm text-sand-800/70 mt-2 leading-relaxed">
+            A terapia não precisa ser pesada. Trabalhamos de forma prática os pontos que mais geram desgaste:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <div class="p-7 rounded-3xl bg-[#FAF6EE] border border-black/5 clean-card flex flex-col justify-between h-full">
+            <div>
+              <div class="w-11 h-11 rounded-2xl bg-brandGreen-bg text-brandGreen flex items-center justify-center mb-4">
+                <i data-lucide="users" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-display font-bold text-xl text-sand-900 mb-2">
+                Timidez & Fazer Amigos
+              </h3>
+              <p class="text-xs sm:text-sm text-sand-800/70 leading-relaxed">
+                Superar a vergonha de iniciar conversas, falar na frente dos outros e se posicionar em grupos.
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-black/5 text-xs font-semibold text-brandGreen flex items-center gap-1.5">
+              <span>Habilidades sociais na prática</span>
+            </div>
+          </div>
+
+          <div class="p-7 rounded-3xl bg-softBlue border border-black/5 clean-card flex flex-col justify-between h-full">
+            <div>
+              <div class="w-11 h-11 rounded-2xl bg-white text-blue-700 flex items-center justify-center mb-4">
+                <i data-lucide="wind" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-display font-bold text-xl text-sand-900 mb-2">
+                Ansiedade & Cobranças
+              </h3>
+              <p class="text-xs sm:text-sm text-sand-800/70 leading-relaxed">
+                Aprender a acalmar pensamentos acelerados, lidar com pressões e reduzir a autocobrança excessiva.
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-black/5 text-xs font-semibold text-blue-800 flex items-center gap-1.5">
+              <span>Regulação emocional com a TCC</span>
+            </div>
+          </div>
+
+          <div class="p-7 rounded-3xl bg-softPeach border border-black/5 clean-card flex flex-col justify-between h-full">
+            <div>
+              <div class="w-11 h-11 rounded-2xl bg-white text-amber-700 flex items-center justify-center mb-4">
+                <i data-lucide="smile" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-display font-bold text-xl text-sand-900 mb-2">
+                Autoestima & Insegurança
+              </h3>
+              <p class="text-xs sm:text-sm text-sand-800/70 leading-relaxed">
+                Parar de se comparar, construir confiança própria e entender suas escolhas e limites.
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-black/5 text-xs font-semibold text-amber-800 flex items-center gap-1.5">
+              <span>Construção de autoconfiança real</span>
+            </div>
+          </div>
+
+          <div class="p-7 rounded-3xl bg-softYellow border border-black/5 clean-card flex flex-col justify-between h-full">
+            <div>
+              <div class="w-11 h-11 rounded-2xl bg-white text-yellow-800 flex items-center justify-center mb-4">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-display font-bold text-xl text-sand-900 mb-2">
+                Comunicação & Limites
+              </h3>
+              <p class="text-xs sm:text-sm text-sand-800/70 leading-relaxed">
+                Aprender a dizer não, expressar opiniões, comunicar necessidades e se posicionar com mais segurança.
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-black/5 text-xs font-semibold text-yellow-900 flex items-center gap-1.5">
+              <span>Comunicação assertiva na prática</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA O PROCESSO -->
+    <section id="como-funciona" class="py-16 sm:py-20 border-t border-black/[0.06]">
+      <div class="max-w-5xl mx-auto px-5 sm:px-8">
+        
+        <div class="text-center max-w-xl mx-auto mb-12">
+          <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-sand-900 tracking-tight">
+            Como funciona o processo?
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="bg-white p-7 rounded-3xl border border-black/5 clean-card flex flex-col justify-between h-full">
+            <div>
+              <span class="w-9 h-9 rounded-xl bg-brandGreen-bg text-brandGreen font-display font-bold text-sm flex items-center justify-center mb-4">
+                01
+              </span>
+              <h3 class="font-display font-bold text-lg text-sand-900 mb-2">Vamos conversar</h3>
+              <p class="text-xs sm:text-sm text-sand-800/70 leading-relaxed">
+                Você entra em contato pelo WhatsApp, tira suas dúvidas e recebe as orientações para agendar sua primeira sessão.
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-black/5 text-xs text-brandGreen font-medium flex items-center gap-1.5">
+              <i data-lucide="check" class="w-4 h-4 shrink-0"></i>
+              <span>Um primeiro contato sem compromisso</span>
+            </div>
+          </div>
+
+          <div class="bg-white p-7 rounded-3xl border border-black/5 clean-card flex flex-col justify-between h-full">
+            <div>
+              <span class="w-9 h-9 rounded-xl bg-brandGreen-bg text-brandGreen font-display font-bold text-sm flex items-center justify-center mb-4">
+                02
+              </span>
+              <h3 class="font-display font-bold text-lg text-sand-900 mb-2">Nosso primeiro encontro</h3>
+              <p class="text-xs sm:text-sm text-sand-800/70 leading-relaxed">
+                Um momento para nos conhecermos, conversar sobre o que trouxe você até aqui e entender suas necessidades, sem pressa ou julgamentos.
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-black/5 text-xs text-brandGreen font-medium flex items-center gap-1.5">
+              <i data-lucide="lock" class="w-4 h-4 shrink-0"></i>
+              <span>Acolhimento e sigilo profissional</span>
+            </div>
+          </div>
+
+          <div class="bg-white p-7 rounded-3xl border border-black/5 clean-card flex flex-col justify-between h-full">
+            <div>
+              <span class="w-9 h-9 rounded-xl bg-brandGreen-bg text-brandGreen font-display font-bold text-sm flex items-center justify-center mb-4">
+                03
+              </span>
+              <h3 class="font-display font-bold text-lg text-sand-900 mb-2">Construindo novas possibilidades</h3>
+              <p class="text-xs sm:text-sm text-sand-800/70 leading-relaxed">
+                Ao longo da terapia, vamos desenvolver estratégias e habilidades para lidar com suas dificuldades e aplicar os aprendizados no dia a dia.
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-black/5 text-xs text-brandGreen font-medium flex items-center gap-1.5">
+              <i data-lucide="sparkles" class="w-4 h-4 shrink-0"></i>
+              <span>No seu tempo e de forma colaborativa</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre-mim" class="py-16 sm:py-20 border-t border-black/[0.06] bg-white/50">
+      <div class="max-w-5xl mx-auto px-5 sm:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          
+          <div class="lg:col-span-5 flex justify-center lg:justify-start">
+            <div class="w-full max-w-sm">
+              <div class="bg-[#FAF6EE] rounded-3xl p-4 sm:p-5 border border-black/5 shadow-sm clean-card">
+                <div class="aspect-[4/4.8] rounded-2xl overflow-hidden bg-sand-100">
+                  <img 
+                    src="foto sobre mim.png" 
+                    alt="Foto da Psicóloga Clínica Laís Souza" 
+                    width="400"
+                    height="480"
+                    loading="lazy"
+                    class="w-full h-full object-cover object-top"
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 flex flex-col items-start space-y-4">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sand-200 text-sand-900 text-[11px] font-bold uppercase tracking-wider">
+              Sobre mim
+            </span>
+
+            <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-sand-900 tracking-tight">
+              Prazer, me chamo Laís!
+            </h2>
+
+            <div class="space-y-3.5 text-sm sm:text-[15px] text-sand-800/80 leading-relaxed">
+              <p>
+                Sou psicóloga, formada pela Universidade Federal da Paraíba (UFPB), com atuação fundamentada na Terapia Cognitivo-Comportamental (TCC).
+              </p>
+              <p>
+                Sou pós-graduada em Habilidades Sociais pelo Instituto Del Prette e tenho experiência clínica no acompanhamento de adolescentes, jovens e adultos, especialmente em questões relacionadas à ansiedade, timidez, insegurança, autoestima, dificuldades nos relacionamentos e regulação emocional.
+              </p>
+              <p>
+                Meu trabalho busca oferecer um espaço acolhedor, ético e sem julgamentos, no qual cada pessoa possa compreender melhor seus pensamentos, emoções e comportamentos, além de desenvolver habilidades e estratégias para lidar com os desafios do cotidiano.
+              </p>
+              <p>
+                Acredito em uma psicoterapia construída em conjunto, respeitando a individualidade, as necessidades e o ritmo de cada pessoa.
+              </p>
+            </div>
+
+            <div class="pt-3 mt-1 w-full border-t border-black/[0.06] flex flex-wrap items-center justify-between gap-3">
+              <span class="font-display font-bold text-sm text-brandGreen-dark">
+                Psicóloga | CRP 13/13309
+              </span>
+              <a href="#contato" class="inline-flex items-center gap-1.5 text-xs font-semibold text-brandGreen hover:text-brandGreen-dark transition-colors">
+                <span>Agendar uma conversa</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GERADOR DE MENSAGEM WHATSAPP -->
+    <section id="contato" class="py-16 sm:py-20 border-t border-black/[0.06]">
+      <div class="max-w-5xl mx-auto px-5 sm:px-8">
+        
+        <div class="max-w-2xl mx-auto">
+          
+          <div class="bg-white p-6 sm:p-9 rounded-3xl border border-black/5 shadow-sm">
+            
+            <div class="text-center max-w-md mx-auto mb-7">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brandGreen-bg text-brandGreen-dark text-[11px] font-bold uppercase tracking-wider mb-2.5">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Contato Direto
+              </span>
+              <h2 class="font-display text-2xl sm:text-3xl font-bold text-sand-900 tracking-tight">
+                Mande sua mensagem sem estresse
+              </h2>
+              <p class="text-xs text-sand-800/70 mt-1.5">
+                Selecione uma opção abaixo para gerar uma mensagem pronta:
+              </p>
+            </div>
+
+            <div class="space-y-4">
+              
+              <div>
+                <label class="block text-[11px] font-bold text-sand-900 uppercase tracking-wider mb-2">Como posso ajudar?</label>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                  <button type="button" onclick="setTopic('consulta')" id="w-topic-consulta" class="w-btn-topic p-3 rounded-xl border-2 border-brandGreen bg-[#FAF6EE] text-xs font-bold text-sand-900 transition-all text-center">
+                    🗓️ Agendar consulta
+                  </button>
+                  <button type="button" onclick="setTopic('duvidas')" id="w-topic-duvidas" class="w-btn-topic p-3 rounded-xl border-2 border-black/5 bg-[#FAF6EE]/60 text-xs font-bold text-sand-800/70 hover:border-black/20 transition-all text-center">
+                    💬 Tirar dúvidas
+                  </button>
+                </div>
+              </div>
+
+              <div class="p-3.5 rounded-2xl bg-[#FAF6EE] border border-black/5 mt-2">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-sand-800/60 block mb-1">Prévia da Mensagem:</span>
+                <p id="msg-preview" class="text-xs text-sand-900 font-sans leading-relaxed">
+                  "Olá, Laís! Gostaria de agendar uma primeira sessão de psicoterapia online."
+                </p>
+              </div>
+
+              <a id="btn-whats-action" href="https://wa.me/5583981579286?text=Ol%C3%A1,%20La%C3%ADs!%20Gostaria%20de%20agendar%20uma%20primeira%20sess%C3%A3o%20de%20psicoterapia%20online." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-brandGreen hover:bg-brandGreen-dark text-white font-bold text-xs sm:text-sm px-5 py-4 rounded-2xl shadow-sm transition-all hover:scale-[1.01] text-center leading-snug">
+                <i data-lucide="send" class="w-4 h-4 shrink-0"></i>
+                <span>Abrir WhatsApp com esta Mensagem</span>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DÚVIDAS FREQUENTES -->
+    <section id="faq" class="py-16 sm:py-20 bg-white/50 border-t border-black/[0.06]">
+      <div class="max-w-5xl mx-auto px-5 sm:px-8">
+        
+        <div class="max-w-2xl mx-auto">
+          
+          <div class="text-center max-w-xl mx-auto mb-10">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sand-200 text-sand-900 text-[11px] font-bold uppercase tracking-wider mb-2.5">
+              Esclarecimentos
+            </span>
+            <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-sand-900 tracking-tight">
+              Dúvidas frequentes
+            </h2>
+            <p class="text-xs sm:text-sm text-sand-800/70 mt-2 leading-relaxed">
+              Algumas respostas para ajudar você a dar o primeiro passo.
+            </p>
+          </div>
+
+          <div class="space-y-3.5">
+            
+            <div class="bg-white rounded-2xl border border-black/5 p-4 sm:p-5 shadow-sm">
+              <button onclick="toggleAccordion(1)" class="w-full text-left flex items-center justify-between gap-4 font-display font-bold text-base text-sand-900">
+                <span>Como funciona a primeira sessão de terapia?</span>
+                <i id="faq-arr-1" data-lucide="chevron-down" class="w-4 h-4 shrink-0 text-sand-800/60 transition-transform"></i>
+              </button>
+              <div id="faq-txt-1" class="hidden text-xs sm:text-sm text-sand-800/80 leading-relaxed mt-2 pt-2 border-t border-black/5">
+                A primeira sessão é um encontro inicial para nos conhecermos, entender o que motivou sua busca por terapia, alinhar suas expectativas e combinar como será conduzido o acompanhamento.
+              </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-black/5 p-4 sm:p-5 shadow-sm">
+              <button onclick="toggleAccordion(2)" class="w-full text-left flex items-center justify-between gap-4 font-display font-bold text-base text-sand-900">
+                <span>E se eu não souber o que falar durante a sessão?</span>
+                <i id="faq-arr-2" data-lucide="chevron-down" class="w-4 h-4 shrink-0 text-sand-800/60 transition-transform"></i>
+              </button>
+              <div id="faq-txt-2" class="hidden text-xs sm:text-sm text-sand-800/80 leading-relaxed mt-2 pt-2 border-t border-black/5">
+                Tudo bem! Você não precisa chegar com tudo organizado nem sabendo por onde começar. A conversa acontece gradualmente, com acolhimento e perguntas que ajudam a explorar o que está acontecendo, sempre respeitando seu tempo.
+              </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-black/5 p-4 sm:p-5 shadow-sm">
+              <button onclick="toggleAccordion(3)" class="w-full text-left flex items-center justify-between gap-4 font-display font-bold text-base text-sand-900">
+                <span>Como funciona a Terapia Cognitivo-Comportamental (TCC)?</span>
+                <i id="faq-arr-3" data-lucide="chevron-down" class="w-4 h-4 shrink-0 text-sand-800/60 transition-transform"></i>
+              </button>
+              <div id="faq-txt-3" class="hidden text-xs sm:text-sm text-sand-800/80 leading-relaxed mt-2 pt-2 border-t border-black/5">
+                A TCC é uma abordagem estruturada e colaborativa que considera a relação entre pensamentos, emoções e comportamentos. Ao longo do processo, trabalhamos para compreender padrões e desenvolver estratégias para lidar com as dificuldades do cotidiano.
+              </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-black/5 p-4 sm:p-5 shadow-sm">
+              <button onclick="toggleAccordion(4)" class="w-full text-left flex items-center justify-between gap-4 font-display font-bold text-base text-sand-900">
+                <span>Como funciona o atendimento psicológico online?</span>
+                <i id="faq-arr-4" data-lucide="chevron-down" class="w-4 h-4 shrink-0 text-sand-800/60 transition-transform"></i>
+              </button>
+              <div id="faq-txt-4" class="hidden text-xs sm:text-sm text-sand-800/80 leading-relaxed mt-2 pt-2 border-t border-black/5">
+                As sessões acontecem por videochamada, em um ambiente reservado, que permita privacidade e tranquilidade. É importante ter uma boa conexão com a internet e utilizar um local em que você se sinta confortável para conversar.
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ SIMÉTRICO E ELEGANTE -->
+  <footer class="mt-8 bg-brandGreen text-white rounded-t-[2.5rem] sm:rounded-t-[3.5rem] pt-14 sm:pt-18 pb-10">
+    <div class="max-w-5xl mx-auto px-5 sm:px-8 text-center">
+      
+      <div class="max-w-xl mx-auto mb-8">
+        <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 leading-tight tracking-tight">
+          Vamos dar o primeiro passo juntos?
+        </h2>
+        
+        <p class="text-xs sm:text-sm text-white/80 leading-relaxed">
+          Se você tem dúvidas ou deseja iniciar a terapia, será um prazer conversar com você.
+        </p>
+      </div>
+
+      <a href="#contato" class="inline-flex items-center gap-2 bg-white hover:bg-sand-50 text-brandGreen-dark font-bold text-xs sm:text-sm px-8 py-3.5 rounded-full shadow-lg transition-all hover:scale-105">
+        <i data-lucide="message-circle" class="w-4 h-4"></i>
+        <span>Entrar em contato</span>
+      </a>
+
+      <div class="mt-14 pt-8 border-t border-white/15 flex flex-col items-center justify-center gap-2 text-[11px] text-white/75">
+        <div>
+          Psicóloga Laís Souza • CRP 13/13309 • Terapia Cognitivo-Comportamental
+        </div>
+        <div class="text-white/65">
+          CVV – Apoio emocional gratuito: 188
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    let formState = { topic: 'consulta' };
+
+    function updateWhatsapp() {
+      let msg = "";
+
+      if (formState.topic === 'consulta') {
+        msg = "Olá, Laís! Gostaria de agendar uma primeira sessão de psicoterapia online.";
+      } else {
+        msg = "Olá, Laís! Gostaria de tirar algumas dúvidas sobre como funciona a terapia online.";
+      }
+
+      document.getElementById('msg-preview').innerText = `"${msg}"`;
+      const encoded = encodeURIComponent(msg);
+      document.getElementById('btn-whats-action').href = `https://wa.me/5583981579286?text=${encoded}`;
+    }
+
+    function setTopic(t) {
+      formState.topic = t;
+      document.querySelectorAll('.w-btn-topic').forEach(b => b.className = "w-btn-topic p-3 rounded-xl border-2 border-black/5 bg-[#FAF6EE]/60 text-xs font-bold text-sand-800/70 hover:border-black/20 transition-all text-center");
+      const active = document.getElementById(`w-topic-${t}`);
+      if (active) active.className = "w-btn-topic p-3 rounded-xl border-2 border-brandGreen bg-[#FAF6EE] text-xs font-bold text-sand-900 transition-all text-center";
+      updateWhatsapp();
+    }
+
+    function toggleAccordion(idx) {
+      const el = document.getElementById(`faq-txt-${idx}`);
+      const arr = document.getElementById(`faq-arr-${idx}`);
+      if (el.classList.contains('hidden')) {
+        el.classList.remove('hidden');
+        arr.classList.add('rotate-180');
+      } else {
+        el.classList.add('hidden');
+        arr.classList.remove('rotate-180');
+      }
+    }
+
+    updateWhatsapp();
+  </script>
+</body>
+</html>
