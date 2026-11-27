@@ -20,7 +20,7 @@
   <meta property="og:title" content="Psi. Laís Souza | Psicoterapia Online (TCC)">
   <meta property="og:description"
     content="Um espaço para trabalhar a insegurança, a autocobrança, a ansiedade e os desafios de se relacionar consigo mesmo e com os outros.">
-  <meta property="og:image" content="foto-lais-heloisa.png">
+  <meta property="og:image" content="https://psilaissouza.com.br/foto-lais-heloisa.png">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Psi. Laís Souza">
 
@@ -29,7 +29,55 @@
   <meta name="twitter:title" content="Psi. Laís Souza | Psicoterapia Online (TCC)">
   <meta name="twitter:description"
     content="Psicoterapia online fundamentada na TCC para adolescentes, jovens e adultos.">
-  <meta name="twitter:image" content="foto-lais-heloisa.png">
+  <meta name="twitter:image" content="https://psilaissouza.com.br/foto-lais-heloisa.png">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Psychologist", "LocalBusiness"],
+    "name": "Psi. Laís Souza - Psicologia Clínica",
+    "description": "Psicoterapia acolhedora e colaborativa fundamentada na Terapia Cognitivo-Comportamental (TCC). Atendimento online para adolescentes, jovens e adultos com foco em ansiedade, timidez, insegurança, autoestima e habilidades sociais.",
+    "image": "https://psilaissouza.com.br/foto-lais-heloisa.png",
+    "url": "https://psilaissouza.com.br/",
+    "telephone": "+55-83-98157-9286",
+    "medicalSpecialty": "CognitiveBehavioralTherapy",
+    "audience": {
+      "@type": "PeopleAudience",
+      "description": "Adolescentes, Jovens e Adultos"
+    },
+    "availableService": [
+      {
+        "@type": "MedicalTherapy",
+        "name": "Psicoterapia Online para Adolescentes, Jovens e Adultos"
+      },
+      {
+        "@type": "MedicalTherapy",
+        "name": "Terapia Cognitivo-Comportamental (TCC)"
+      },
+      {
+        "@type": "MedicalTherapy",
+        "name": "Desenvolvimento de Habilidades Sociais e Regulação Emocional"
+      }
+    ]
+  }
+  </script>
+
+  <!-- ========================================================== -->
+  <!-- GOOGLE TAG (Google Ads / Google Analytics 4)               -->
+  <!-- Substitua AW-XXXXXXXXXX pelo ID da sua conta do Google Ads -->
+  <!-- e/ou G-XXXXXXXXXX pelo ID do Google Analytics 4.           -->
+  <!-- ========================================================== -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-XXXXXXXXXX');
+    // gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
 
   <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -669,6 +717,25 @@
         el.classList.add('hidden');
         arr.classList.remove('rotate-180');
       }
+    }
+
+    // Rastreamento de Conversão (Google Ads / GA4) nos cliques do WhatsApp
+    function trackWhatsappConversion(source) {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'contact_whatsapp', {
+          event_category: 'engagement',
+          event_label: source,
+          topic: formState.topic,
+          format: 'online'
+        });
+        // Quando criar a ação de conversão no Google Ads, descomente e preencha send_to:
+        // window.gtag('event', 'conversion', { send_to: 'AW-XXXXXXXXXX/SEU_LABEL_AQUI' });
+      }
+    }
+
+    const whatsActionBtn = document.getElementById('btn-whats-action');
+    if (whatsActionBtn) {
+      whatsActionBtn.addEventListener('click', () => trackWhatsappConversion('simulador_whatsapp'));
     }
 
     updateWhatsapp();
